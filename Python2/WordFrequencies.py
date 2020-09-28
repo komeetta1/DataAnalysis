@@ -1,4 +1,3 @@
-search_words = ["the", "red", "blue"]
 def word_frequencies(file_name):
     d = {}
     with open(file_name, 'r') as f:
@@ -14,7 +13,7 @@ def word_frequencies(file_name):
 
 def main():
     d = word_frequencies("Python2/alice.txt")
-    
+    search_words = ["the", "red", "blue"]
     for key, value in d.items():
         if key in search_words:
             print(key, value)
